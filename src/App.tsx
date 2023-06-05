@@ -19,8 +19,44 @@ function App() {
         here
       </a>
       <br />
-      <br />I currenty am building my blog and will post a link here after I can
-      see an MVP.
+      <br />
+      <div>
+        I currenty am building my tech blog using markdown.
+        <br />I saw{" "}
+        <a
+          href="https://www.youtube.com/watch?v=Od-Uj5RSsuM"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          this video in youtube
+        </a>{" "}
+        and decided to give it a try.
+        <br />
+        It's still a work in progress but the goal is to have this as my client
+        facing blog.
+        <br />
+        A place to share new learnings or anything interesting in particular.
+        <br />
+        See the progress{" "}
+        <a
+          href="https://narnia1991.github.io/blog"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          here
+        </a>
+        <br />
+        <br />
+        This is far underwhelming than{" "}
+        <a
+          href="https://demo-cms.jeanaica.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          the blog that my awesome wife made
+        </a>
+        😂
+      </div>
     </div>
   );
 }
