@@ -18,6 +18,9 @@ function App() {
       >
         here
       </a>
+      <br />
+      <br />I currenty am building my blog and will post a link here after I can
+      see an MVP.
     </div>
   );
 }
