@@ -39,7 +39,7 @@ function App() {
         <br />
         See the progress{" "}
         <a
-          href="https://narnia1991.github.io/blog"
+          href="https://narnia1991.github.io/tech-blog"
           target="_blank"
           rel="noreferrer noopener"
         >
