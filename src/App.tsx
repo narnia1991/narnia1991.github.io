@@ -1,45 +1,24 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
 function App() {
-  return (
+  const MainPage = (
     <div className="App">
-      Been tinkering around the web since 2015. It's just now that I had
-      interest in creating my own. <br />
-      <br />
-      Me and{" "}
-      <a href="https://jeanaica.com" target="_blank" rel="noreferrer noopener">
-        my wife
-      </a>{" "}
-      also held a talk last Aug 2022 with the PLM students. Presentation{" "}
-      <a
-        href="https://narnia1991.github.io/weaving-webs"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        here
-      </a>
-      <br />
-      <br />
-      <div>
-        I currenty am building my tech blog using markdown.
-        <br />I saw{" "}
+      <div className="textWrap">
+        Been tinkering around the web since 2015. It's just now that I had
+        interest in creating my own. <br />
+        <br />
+        Me and{" "}
         <a
-          href="https://www.youtube.com/watch?v=Od-Uj5RSsuM"
+          href="https://jeanaica.com"
           target="_blank"
           rel="noreferrer noopener"
         >
-          this video in youtube
+          my wife
         </a>{" "}
-        and decided to give it a try.
-        <br />
-        It's still a work in progress but the goal is to have this as my client
-        facing blog.
-        <br />
-        A place to share new learnings or anything interesting in particular.
-        <br />
-        See the progress{" "}
+        also held a talk last Aug 2022 with the PLM students. Presentation{" "}
         <a
-          href="https://narnia1991.github.io/tech-blog"
+          href="https://narnia1991.github.io/weaving-webs"
           target="_blank"
           rel="noreferrer noopener"
         >
@@ -47,17 +26,51 @@ function App() {
         </a>
         <br />
         <br />
-        This is far underwhelming than{" "}
-        <a
-          href="https://demo-cms.jeanaica.com/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          the blog that my awesome wife made
-        </a>
-        😂
+        <div>
+          I currenty am building my tech blog using markdown.
+          <br />I saw{" "}
+          <a
+            href="https://www.youtube.com/watch?v=Od-Uj5RSsuM"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            this video in youtube
+          </a>{" "}
+          and decided to give it a try.
+          <br />
+          It's still a work in progress but the goal is to have this as my
+          client facing blog.
+          <br />
+          A place to share new learnings or anything interesting in particular.
+          <br />
+          See the progress{" "}
+          <a
+            href="https://narnia1991.github.io/tech-blog"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            here
+          </a>
+          <br />
+          <br />
+          This is far underwhelming than{" "}
+          <a
+            href="https://demo-cms.jeanaica.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            the blog that my awesome wife made
+          </a>
+          😂
+        </div>
       </div>
     </div>
+  );
+
+  return (
+    <Routes>
+      <Route path="/" element={MainPage} />
+    </Routes>
   );
 }
 

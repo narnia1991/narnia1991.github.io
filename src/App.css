@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  background-image: url("../public/images/bg.jpg");
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.textWrap {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 2rem;
 }
 
 .App-logo {
@@ -20,7 +28,6 @@ a {
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
