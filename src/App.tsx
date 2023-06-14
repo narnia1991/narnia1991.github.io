@@ -68,9 +68,14 @@ function App() {
   );
 
   return (
-    <Routes>
-      <Route path="/" element={MainPage} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={MainPage} />
+      </Routes>
+      <div style={{ position: "absolute", bottom: 0, margin: "0 auto" }}>
+        ©2023 narnia1991
+      </div>
+    </>
   );
 }
 
