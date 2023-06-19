@@ -72,7 +72,7 @@ function App() {
         <br />
         See the progress{" "}
         <a
-          href="https://narnia1991.github.io/games/tic-tac-shuffle"
+          href="https://narnia1991.github.io/games-tic-tac-shuffle"
           target="_blank"
           rel="noreferrer noopener"
         >
