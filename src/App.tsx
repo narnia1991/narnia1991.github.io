@@ -63,6 +63,21 @@ function App() {
           </a>
           😂
         </div>
+        <br />
+        <br />
+        <div>
+          I've also been creating my spin on the classic boring tic tac toe. The
+          Tic Tac Shuffle!
+        </div>{" "}
+        <br />
+        See the progress{" "}
+        <a
+          href="https://narnia1991.github.io/games/tic-tac-shuffle"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          here
+        </a>
       </div>
     </div>
   );
