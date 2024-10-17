@@ -1,0 +1,19 @@
+Use atomic design to create the page
+
+Atoms
+- Colors
+- Typography
+- Buttons
+- Inputs
+
+Molecules
+- Reusable Components
+- Forms
+
+Organisms
+- Components
+
+Templates
+Pages
+
+Concept is in https://www.canva.com/design/DAGT2hpulRI/AXTykTU_3ypJVrcwTo5aAA/edit?utm_content=DAGT2hpulRI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
