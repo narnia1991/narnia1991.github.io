@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Marcellus";
+    src: url("../public/fonts/Marcellus-Regular.ttf");
+}
+
+@font-face {
+    font-family: "UncialAntiqua";
+    src: url("../public/fonts/UncialAntiqua-Regular.ttf");
+}
