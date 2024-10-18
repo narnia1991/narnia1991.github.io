@@ -1,15 +1,15 @@
 {
-  "name": "vite-app",
+  "name": "narnia1991.github.io",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "homepage": "./",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "yarn build",
-    "deploy": "yarn predeploy && gh-pages -d build"
+    "deploy": "yarn predeploy && gh-pages -d dist"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.10",
