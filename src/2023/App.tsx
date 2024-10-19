@@ -87,9 +87,6 @@ function App() {
       <Routes>
         <Route path="/" element={MainPage} />
       </Routes>
-      <div style={{ position: "absolute", bottom: 0, margin: "0 auto" }}>
-        ©2023 narnia1991
-      </div>
     </>
   );
 }
