@@ -26,6 +26,7 @@ const WorkExperienceBack: FC<CardProps> = ({ pallette, backHeader }) => {
           ].map((item, index) => {
             return (
               <ListPills
+                key={index}
                 customStyles={{
                   backgroundColor: lightTheme[0].backgroundColor,
                 }}

@@ -1,3 +1,4 @@
+import throttle from "lodash.throttle";
 import lightTheme from "../atoms/colors";
 
 export const getRandom = ({
@@ -19,4 +20,11 @@ export const getPallette = ({
 }) => {
   const idx = getRandom({});
   return pallette[idx];
+};
+
+export const getScreenWidth = () => {
+  return throttle(() => {
+    console.log(window.innerWidth);
+    return window.innerWidth;
+  }, 300);
 };

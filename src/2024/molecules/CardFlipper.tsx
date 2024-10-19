@@ -20,7 +20,7 @@ const CardFlipper: FC<{
   height,
 }) => {
   return (
-    <div className="relative mb-8 mr-8 w-80 shrink" style={{ height: height }}>
+    <div className="relative mb-8 mr-8 w-80" style={{ height: height }}>
       <div
         className={`absolute transition duration-500 ease-in-out transform  ${
           isMainActive ? "scale-x-100  opacity-100" : "scale-x-0 opacity-0"

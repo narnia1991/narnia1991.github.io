@@ -4,6 +4,7 @@ import { default as App2023 } from "./2023/App";
 import { default as App2024 } from "./2024/App";
 import { Link, Outlet, Route, Routes } from "react-router-dom";
 import { FC, ReactNode } from "react";
+import lightTheme from "./2024/atoms/colors";
 
 const VersionMenu: FC<{ items: string[] }> = ({ items }) => {
   return (
@@ -24,17 +25,20 @@ const VersionMenu: FC<{ items: string[] }> = ({ items }) => {
 
 const Layout: FC<{ items: string[] }> = ({ items }) => {
   return (
-    <>
+    <div
+      className="h-full w-screen overflow-y-auto p-4 lg:h-screen lg:w-full"
+      style={{ backgroundColor: lightTheme[0].backgroundColor }}
+    >
       <div className="flex justify-start">
         <VersionMenu items={items} />
       </div>
 
       <Outlet />
 
-      <div className="absolute bottom-0 margin-0 w-screen">
+      <div className="bottom-0 margin-0 w-screen">
         ©{new Date().getFullYear()} narnia1991
       </div>
-    </>
+    </div>
   );
 };
 
@@ -57,7 +61,7 @@ function App() {
               );
             }
           )}
-          <Route index element={<div>2024</div>} />
+          <Route index element={<App2024 />} />
         </Route>
       </Routes>
     </>
