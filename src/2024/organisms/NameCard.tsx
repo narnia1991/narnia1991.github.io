@@ -1,4 +1,4 @@
-import { FC, useMemo } from "react";
+import { FC } from "react";
 
 import { getPallette } from "../utils/styleUtils";
 import Container from "../atoms/Container";
@@ -6,15 +6,13 @@ import Container from "../atoms/Container";
 const NameCard: FC = () => {
   const pallette = getPallette({});
 
-  let fullWidth = window.innerWidth < 1280;
-
   return (
     <Container
       customStyles={{
         backgroundColor: pallette.backgroundColor,
         flexDirection: "row",
         maxHeight: "4rem",
-        width: fullWidth ? "100%" : 320,
+        margin: "auto",
       }}
     >
       <img alt="logo" src="/Narnia Icon.png" className="h-8 w-8 my-auto" />

@@ -1,16 +1,15 @@
 import { CSSProperties, FC, ReactNode } from "react";
 
 const Container: FC<{
-  fullWidth?: boolean;
   customStyles?: CSSProperties;
   children: ReactNode;
-}> = ({ customStyles, children, fullWidth }) => {
+}> = ({ customStyles, children }) => {
+  let fullWidth = window.innerWidth < 1280;
+
   return (
     <div
-      className={`flex flex-col ${
-        !!fullWidth ? "w-full" : "w-80"
-      } shrink rounded-lg min-h-50 p-4 m-4`}
-      style={{ ...customStyles }}
+      className={`flex flex-col justify-center shrink rounded-lg min-h-50 p-4`}
+      style={{ ...customStyles, width: fullWidth ? "100%" : 320 }}
     >
       {children}
     </div>

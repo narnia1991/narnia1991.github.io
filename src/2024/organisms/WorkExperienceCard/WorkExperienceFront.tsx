@@ -8,7 +8,7 @@ const WorkExperienceFront: FC<CardProps> = ({ pallette, frontHeader }) => {
       contentImage={<div>Click +</div>}
       contentLabel={
         <div
-          className="font-antiqua text-4xl"
+          className="flex font-antiqua text-3xl flex-shrink"
           style={{ color: pallette.color }}
         >
           {frontHeader}

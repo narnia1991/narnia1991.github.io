@@ -19,12 +19,18 @@ const CardFlipper: FC<{
   BackComponent,
   height,
 }) => {
+  let fullWidth = window.innerWidth < 1280;
+
   return (
-    <div className="relative mb-8 mr-8 w-80" style={{ height: height }}>
+    <div
+      className="flex relative m-4 shrink justify-center"
+      style={{ height: height, width: fullWidth ? "100%" : 320 }}
+    >
       <div
-        className={`absolute transition duration-500 ease-in-out transform  ${
+        className={`absolute transition duration-500 ease-in-out transform flex justify-center align-middle ${
           isMainActive ? "scale-x-100  opacity-100" : "scale-x-0 opacity-0"
         }`}
+        style={{ width: fullWidth ? "20rem" : 320 }}
       >
         <Container
           customStyles={{
@@ -54,9 +60,10 @@ const CardFlipper: FC<{
         </Container>
       </div>
       <div
-        className={`absolute transition duration-500 ease-in-out transform  ${
+        className={`absolute transition duration-500 ease-in-out transform flex justify-center align-middle  ${
           isMainActive ? "scale-x-0 opacity-0" : "scale-x-100 opacity-100"
         }`}
+        style={{ width: fullWidth ? "20rem" : 320 }}
       >
         <Container
           customStyles={{
