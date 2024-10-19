@@ -17,3 +17,27 @@ Templates
 Pages
 
 Concept is in https://www.canva.com/design/DAGT2hpulRI/AXTykTU_3ypJVrcwTo5aAA/edit?utm_content=DAGT2hpulRI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+color palette
+{[
+        {
+            backgroundColor: "#caaacd",
+            color: "#fdf3dd"
+        },
+        {
+            backgroundColor: "#ef601e",
+            color: "#d6e8f7"
+        },{
+            backgroundColor: "#d6e8f7",
+            color: "#caaacd",
+        },
+        {
+            backgroundColor: "#cb962e",
+            color: "#fdf3dd"
+        },
+        {
+            backgroundColor: "#d6e8f7",
+            color: "#cb962e"
+        }
+    ]
+}
