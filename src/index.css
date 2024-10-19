@@ -3,11 +3,32 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Marcellus";
-    src: url("../public/fonts/Marcellus-Regular.ttf");
+  font-family: "Marcellus";
+  src: url("../public/fonts/Marcellus-Regular.ttf");
 }
 
 @font-face {
-    font-family: "UncialAntiqua";
-    src: url("../public/fonts/UncialAntiqua-Regular.ttf");
+  font-family: "UncialAntiqua";
+  src: url("../public/fonts/UncialAntiqua-Regular.ttf");
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

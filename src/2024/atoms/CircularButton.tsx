@@ -1,7 +1,19 @@
-import { CSSProperties, FC, ReactNode } from "react"
+import { CSSProperties, FC, ReactNode } from "react";
 
-const CircularButton: FC<{ customStyles?: CSSProperties, onClick?: VoidFunction, children: ReactNode }> = ({ customStyles, onClick, children }) => {
-    return <button className="rounded-full" style={{ ...customStyles }} onClick={onClick}>{children}</button>
-}
+const CircularButton: FC<{
+  customStyles?: CSSProperties;
+  onClick?: VoidFunction;
+  children: ReactNode;
+}> = ({ customStyles, onClick, children }) => {
+  return (
+    <button
+      className="rounded-full transition ease-out duration-150 hover:scale-125 hover:ease-in"
+      style={{ ...customStyles }}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
+};
 
-export default CircularButton
+export default CircularButton;

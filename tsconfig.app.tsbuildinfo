@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/2023/app.tsx","./src/2024/app.tsx"],"version":"5.6.3"}
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/2023/app.tsx","./src/2024/app.tsx","./src/2024/atoms/circularbutton.tsx","./src/2024/atoms/container.tsx","./src/2024/atoms/colors.ts","./src/2024/molecules/cardheader.tsx","./src/2024/molecules/maincardcontent.tsx","./src/2024/organisms/namecard.tsx","./src/2024/organisms/workexperiencecard.tsx","./src/2024/utils/styleutils.ts"],"version":"5.6.3"}
