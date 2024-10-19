@@ -4,18 +4,19 @@ import Container from "./atoms/Container";
 import CardHeader from "./molecules/CardHeader";
 import MainCardContent from "./molecules/MainCardContent";
 import NameCard from "./organisms/NameCard";
-import WorkExperienceCard from "./organisms/WorkExperienceCard";
+import WorkExperienceCard from "./organisms/WorkExperienceCard/WorkExperienceCard";
 import { getRandom } from "./utils/styleUtils";
 import lightTheme from "./atoms/colors";
+import MiniGamesCard from "./organisms/MiniGames/MiniGamesCard";
+
+export type CardProps = {
+  pallette: Record<string, string>;
+  frontHeader?: string;
+  backHeader?: string;
+};
 
 function App() {
-  const cardList = [
-    "Mini-Games",
-    "Professional Links",
-    "Arts",
-    "Music",
-    "Food",
-  ];
+  const cardList = ["Professional Links", "Arts", "Music", "Food"];
 
   const shuffledPallete = Object.values(lightTheme)
     .slice(1)
@@ -27,6 +28,7 @@ function App() {
     <div className="flex m-auto content-center flex-wrap overflow-auto p-8 xl:flex-col xl:max-h-screen xl:overflow-hidden">
       <NameCard />
       <WorkExperienceCard pallette={shuffledPallete[2]} />
+      <MiniGamesCard pallette={shuffledPallete[3]} />
       {cardList.map((card, index) => {
         const pallette = shuffledPallete[index];
         return (
