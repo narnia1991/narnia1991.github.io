@@ -6,6 +6,7 @@ import Container from "../atoms/Container";
 const NameCard: FC = () => {
   const pallette = getPallette({});
 
+  let fullWidth = window.innerWidth < 1280;
   return (
     <Container
       customStyles={{
@@ -13,6 +14,7 @@ const NameCard: FC = () => {
         flexDirection: "row",
         maxHeight: "4rem",
         margin: "auto",
+        width: fullWidth ? "100%" : 320,
       }}
     >
       <img alt="logo" src="/Narnia Icon.png" className="h-8 w-8 my-auto" />

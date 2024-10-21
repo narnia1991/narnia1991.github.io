@@ -23,8 +23,8 @@ const CardFlipper: FC<{
 
   return (
     <div
-      className="flex relative m-4 shrink justify-center"
-      style={{ height: height, width: fullWidth ? "100%" : 320 }}
+      className="flex relative max-md:m-4 md:m-4 shrink justify-center"
+      style={{ height: height, width: 320 }}
     >
       <div
         className={`absolute transition duration-500 ease-in-out transform flex justify-center align-middle ${

@@ -1,12 +1,11 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  padding: 2rem;
 }
 
 .textWrap {
   background: rgba(255, 255, 255, 0.5);
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .App-logo {
