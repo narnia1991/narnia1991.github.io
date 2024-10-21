@@ -41,3 +41,34 @@ color palette
         }
     ]
 }
+
+Create a CMS for the data
+
+entryTypes = {
+  workExperience: {
+    jobTitle: string,
+    company: string,
+    workFrom: Date,
+    workTo: Date,
+    workType: fulltime/parttime
+    skills: string[],
+    jobResponsibilities: string[]
+  },
+  games: {
+    name: string,
+    media: string,
+    link: string,
+    description: string,
+    instructions: string
+  },
+  professionalLink: {
+    name: string, //linkedin, github etc
+    link: string,
+    logo: string
+  },
+  arts: {
+    name: string, 
+    link: string, 
+    description: string
+  },
+}
