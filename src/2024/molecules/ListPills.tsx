@@ -1,17 +1,24 @@
-import { CSSProperties, FC, ReactNode } from "react";
+import { CSSProperties, FC, ReactNode, useState } from "react";
+import JobDetailsCard, { JobDetailsProps } from "../organisms/JobDetailsCard";
 
 const ListPills: FC<{
-  children: ReactNode;
+  job: JobDetailsProps;
   customStyles?: CSSProperties;
-  onClick?: VoidFunction;
-}> = ({ onClick, children, customStyles }) => {
+  children: ReactNode;
+}> = ({ job, children, customStyles }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleClick = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <button
       style={customStyles}
-      onClick={onClick}
+      onClick={handleClick}
       className="flex w-full p-4 my-4 rounded-lg"
     >
-      {children}
+      {!isExpanded ? children : <JobDetailsCard {...job} />}
     </button>
   );
 };

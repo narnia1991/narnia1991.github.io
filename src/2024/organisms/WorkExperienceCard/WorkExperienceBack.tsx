@@ -3,37 +3,25 @@ import ListCardContent from "../../molecules/ListCardContent";
 import ListPills from "../../molecules/ListPills";
 import lightTheme from "../../atoms/colors";
 import { CardProps } from "../../App";
+import { dummyWork } from "../../dummywork";
 
 const WorkExperienceBack: FC<CardProps> = ({ pallette, backHeader }) => {
   return (
     <ListCardContent
       contentItems={
         <>
-          {[
-            "Work",
-            "Work",
-            "Work",
-            "Work",
-            "Work",
-            "Work",
-            "Work",
-            "Work",
-            "Work",
-            "Work",
-            "Work",
-            "Work",
-            "Work",
-          ].map((item, index) => {
+          {dummyWork.map((item, index) => {
             return (
               <ListPills
                 key={index}
                 customStyles={{
                   backgroundColor: lightTheme[0].backgroundColor,
                 }}
+                job={item}
               >
                 <div
                   style={{ color: pallette.cardTextColor }}
-                >{`${item}${index}`}</div>
+                >{`${item?.jobTitle}`}</div>
               </ListPills>
             );
           })}
