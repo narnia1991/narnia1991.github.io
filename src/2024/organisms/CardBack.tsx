@@ -1,28 +1,35 @@
 import { FC } from "react";
-import ListCardContent from "../../molecules/ListCardContent";
-import ListPills from "../../molecules/ListPills";
-import lightTheme from "../../atoms/colors";
-import { CardProps } from "../../App";
-import { dummyWork } from "../../dummywork";
+import { CardProps } from "../App";
+import ListCardContent from "../molecules/ListCardContent";
+import ListPills from "../molecules/ListPills";
+import lightTheme from "../atoms/colors";
 
-const WorkExperienceBack: FC<CardProps> = ({ pallette, backHeader }) => {
+const CardBack: FC<CardProps> = ({
+  pallette,
+  backHeader,
+  items,
+  mainTextKey,
+  DetailsComponent = () => <></>,
+}) => {
   return (
     <ListCardContent
       contentItems={
         <>
-          {dummyWork.map((item, index) => {
+          {items?.map((item, index) => {
             return (
               <ListPills
                 key={index}
                 customStyles={{
                   backgroundColor: lightTheme[0].backgroundColor,
+                  color: pallette.cardTextColor,
                 }}
-                job={item}
+                item={item}
+                DetailsComponent={DetailsComponent}
               >
                 <div
                   className="text-start"
                   style={{ color: pallette.cardTextColor }}
-                >{`${item?.jobTitle}`}</div>
+                >{`${item?.[mainTextKey ?? ""]}`}</div>
               </ListPills>
             );
           })}
@@ -40,4 +47,4 @@ const WorkExperienceBack: FC<CardProps> = ({ pallette, backHeader }) => {
   );
 };
 
-export default WorkExperienceBack;
+export default CardBack;

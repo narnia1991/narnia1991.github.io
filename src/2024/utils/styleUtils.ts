@@ -24,7 +24,6 @@ export const getPallette = ({
 
 export const getScreenWidth = () => {
   return throttle(() => {
-    console.log(window.innerWidth);
     return window.innerWidth;
   }, 300);
 };

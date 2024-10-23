@@ -6,7 +6,7 @@ const Container: FC<{
 }> = ({ customStyles, children }) => {
   return (
     <div
-      className={`flex flex-col justify-center shrink rounded-lg min-h-50 p-4`}
+      className={`flex flex-col w-full m-4 md:m-0 justify-center rounded-lg p-4`}
       style={{ ...customStyles }}
     >
       {children}

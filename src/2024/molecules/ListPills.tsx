@@ -1,11 +1,11 @@
 import { CSSProperties, FC, ReactNode, useState } from "react";
-import JobDetailsCard, { JobDetailsProps } from "../organisms/JobDetailsCard";
 
 const ListPills: FC<{
-  job: JobDetailsProps;
+  item: any; //TODO: populate with correct types
   customStyles?: CSSProperties;
   children: ReactNode;
-}> = ({ job, children, customStyles }) => {
+  DetailsComponent: FC<any>;
+}> = ({ item, children, customStyles, DetailsComponent }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleClick = () => {
@@ -16,9 +16,13 @@ const ListPills: FC<{
     <button
       style={customStyles}
       onClick={handleClick}
-      className="flex w-full p-4 my-4 rounded-lg"
+      className="flex w-full flex-1 p-4 my-4 rounded-lg"
     >
-      {!isExpanded ? children : <JobDetailsCard {...job} />}
+      {!isExpanded ? (
+        children
+      ) : (
+        <DetailsComponent customStyles={{ customStyles }} {...item} />
+      )}
     </button>
   );
 };

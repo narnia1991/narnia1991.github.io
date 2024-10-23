@@ -1,11 +1,8 @@
 import { FC } from "react";
 
-import { getPallette } from "../utils/styleUtils";
 import Container from "../atoms/Container";
 
-const NameCard: FC = () => {
-  const pallette = getPallette({});
-
+const NameCard: FC<{ pallette: Record<string, string> }> = ({ pallette }) => {
   let fullWidth = window.innerWidth < 1280;
   return (
     <Container
@@ -13,8 +10,10 @@ const NameCard: FC = () => {
         backgroundColor: pallette.backgroundColor,
         flexDirection: "row",
         maxHeight: "4rem",
-        margin: "auto",
+        minHeight: "unset",
+        margin: "0 auto",
         width: fullWidth ? "100%" : 320,
+        position: "relative",
       }}
     >
       <img alt="logo" src="/Narnia Icon.png" className="h-8 w-8 my-auto" />

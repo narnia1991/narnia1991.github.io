@@ -1,12 +1,14 @@
 import { getRandom } from "../../utils/styleUtils";
-import { FC, useCallback, useMemo, useState } from "react";
+import { FC, ReactNode, useCallback, useMemo, useState } from "react";
 import CardFlipper from "../../molecules/CardFlipper";
 import MiniGamesBack from "./MiniGamesBack";
 import MiniGamesFront from "./MiniGamesFront";
 
-const MiniGamesCard: FC<{ pallette: Record<string, string> }> = ({
-  pallette,
-}) => {
+const MiniGamesCard: FC<{
+  pallette: Record<string, string>;
+  FrontComponent?: ReactNode;
+  BackComponent?: ReactNode;
+}> = ({ pallette }) => {
   const [isMainActive, setIsMainActive] = useState(true);
 
   const handleCardFlip = useCallback(() => {

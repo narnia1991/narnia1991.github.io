@@ -8,7 +8,7 @@ const CardFlipper: FC<{
   isMainActive: boolean;
   FrontComponent: ReactNode;
   BackComponent: ReactNode;
-  height: number;
+  height: string;
   pallette: Record<string, string>;
   handleCardFlip: VoidFunction;
 }> = ({
@@ -23,7 +23,7 @@ const CardFlipper: FC<{
 
   return (
     <div
-      className="flex relative max-md:m-4 md:m-4 shrink justify-center"
+      className="flex relative md:p-4 m-4 justify-center"
       style={{ height: height, width: 320 }}
     >
       <div
