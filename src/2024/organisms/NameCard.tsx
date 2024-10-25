@@ -11,7 +11,7 @@ const NameCard: FC<{ pallette: Record<string, string> }> = ({ pallette }) => {
         flexDirection: "row",
         maxHeight: "4rem",
         minHeight: "unset",
-        margin: "0 auto",
+        margin: fullWidth ? "0 1rem" : "0 auto",
         width: fullWidth ? "100%" : 320,
         position: "relative",
       }}

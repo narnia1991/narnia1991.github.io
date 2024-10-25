@@ -1,6 +1,9 @@
 .App {
   text-align: center;
-  min-height: 100vh;
+  min-height: 85vh;
+  overflow: auto;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .textWrap {

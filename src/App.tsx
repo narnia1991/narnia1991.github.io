@@ -26,7 +26,7 @@ const VersionMenu: FC<{ items: string[] }> = ({ items }) => {
 const Layout: FC<{ items: string[] }> = ({ items }) => {
   return (
     <div
-      className="relative h-full w-screen overflow-hidden p-4 lg:h-screen lg:w-full"
+      className="flex flex-col relative h-screen w-screen py-4 overflow-hidden lg:p-4 lg:w-full"
       style={{ backgroundColor: lightTheme[0].backgroundColor }}
     >
       <div className="flex justify-start">
@@ -35,9 +35,7 @@ const Layout: FC<{ items: string[] }> = ({ items }) => {
 
       <Outlet />
 
-      <div className="absolute bottom-0 margin-0 w-screen">
-        ©{new Date().getFullYear()} narnia1991
-      </div>
+      <div className="w-screen">©{new Date().getFullYear()} narnia1991</div>
     </div>
   );
 };

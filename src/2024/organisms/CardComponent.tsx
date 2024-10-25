@@ -14,7 +14,7 @@ const CardComponent: FC<{
   }, [isMainActive]);
 
   const height = useMemo(() => {
-    return getRandom({ min: 30, max: 90 });
+    return getRandom({ min: 30, max: 60 });
   }, []);
 
   return (
