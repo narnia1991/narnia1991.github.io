@@ -131,7 +131,7 @@ function App() {
 
   return (
     <>
-      <div className="flex absolute flex-row h-screen w-screen flex-wrap overflow-auto m-auto xl:flex-col xl:justify-start xl:max-h-screen">
+      <div className="flex flex-row h-screen w-screen flex-wrap overflow-auto xl:flex-col xl:justify-start xl:h-11/12">
         <NameCard pallette={shuffledPallete[0]} />
         {listKeys.map((listItem, index) => {
           const pallette =
