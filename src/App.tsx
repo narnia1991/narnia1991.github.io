@@ -3,6 +3,7 @@ import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { default as App2023 } from "./2023/App";
 import { default as App2024 } from "./2024/App";
 import { default as App2025 } from "./2025/PlanRenderer";
+import { default as App2026 } from "./2026/App";
 import { Link, Outlet, Route, Routes } from "react-router-dom";
 import { FC, ReactNode } from "react";
 import lightTheme from "./2024/atoms/colors";
@@ -52,6 +53,7 @@ function App() {
     "2023": App2023,
     "2024": App2024,
     "2025": App2025,
+    "2026": App2026,
   };
 
   const versionKeys = Object.keys(versionComponents);
